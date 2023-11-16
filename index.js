@@ -2,8 +2,8 @@ const express= require('express');
 const app=express();
 const PORT=process.env.PORT || 3000;
 
-const updateDB=require('./routes/updateDB')
-const fetchDetails=require('./routes/fetchDetails')
+const updateDB=require('./updateDB')
+const fetchDetails=require('./fetchDetails')
 
 app.use('/updateDB',updateDB);
 app.use('/fetchDetails',fetchDetails);
